@@ -5,6 +5,9 @@ import PackageDescription
 
 let package = Package(
     name: "externalIOSPackage",
+    platforms: [
+            .iOS(.v14) // Minimum iOS version to support SwiftUI
+        ],
     products: [
         // Products define the executables and libraries a package produces, making them visible to other packages.
         .library(
